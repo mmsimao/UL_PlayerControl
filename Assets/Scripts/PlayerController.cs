@@ -5,16 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f;
-    // Start is called before the first frame update
+    // 'Start' é chamado depois da primeira atualização de frame
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    //'Update' é chamado uma vez a cada frame
     void Update()
     {
-         // Move the vehicle forward
+         // Move o veículo para frente
          transform.Translate(Vector3.forward * Time.deltaTime * speed);
          
     }
